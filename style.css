@@ -85,7 +85,7 @@ h3 {
 
 .box {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
 
 
@@ -94,22 +94,38 @@ h3 {
 
 .inputBoxes1 {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: rgb(37, 255, 211);
     border: 3px solid black;
     width: 150px;
     height: 200px;
+    font-size: 28px;
+  
 
 }
 
 .inputBoxes2 {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
     width: 300px;
     height: 200px;
     margin-left: 25px;
     background-color: rgb(37, 255, 211);
     border: 3px solid black;
+}
+
+.history {
+    margin-bottom: 20px;
+}
+
+.currentInput {
+    width:300px;
+    height: 20px;
+    background-color: rgb(44, 211, 177);
+    text-wrap: wrap;
 }

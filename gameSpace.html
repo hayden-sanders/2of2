@@ -12,32 +12,43 @@
 
     <div class="box">
         <div class="big inputBoxes1">
-            <span>hello</span>
+            <span>GOAL: </span>
+            <span id="goal-el">0</span>
+            <span>ANS: </span>
+            <span id="ans-el">0</span>
+            <span>MOVES: </span>
+            <span id="move-el">0</span>
         </div>
         <div class="big inputBoxes2">
-            <span>world</span>
+            <div>
+                <span class="history">History:</span>
+                <span id="history-el"></span>
+            </div>
+            <div>
+                <span>Current:</span>
+                <span class="currentInput" id="current-el"></span>
+            </div>
         </div>
     </div>
 
     <div class="calcButtons">
         <button class="calcButton"> 2 </button>
-        <button class="calcButton"> ^ </button>
-        <button class="calcButton"> ( </button>
-        <button class="calcButton"> ) </button>
-        <button class="calcButton"> X </button>
-        <button class="calcButton"> / </button>
-        <button class="calcButton"> + </button>
-        <button class="calcButton"> - </button>
-        <button class="calcButton"> √ </button>
-        <button class="calcButton"> Sin </button>
-        <button class="calcButton"> Cos </button>
-        <button class="calcButton"> Tan </button>
+        <button class="calcButton" onclick="addSymbol('^')"> ^ </button>
+        <button class="calcButton" onclick="addSymbol('(')"> ( </button>
+        <button class="calcButton" onclick="addSymbol(')')"> ) </button>
+        <button class="calcButton" onclick="addSymbol('x')"> X </button>
+        <button class="calcButton" onclick="addSymbol('/')"> / </button>
+        <button class="calcButton" onclick="addSymbol('+')"> + </button>
+        <button class="calcButton" onclick="addSymbol('-')"> - </button>
+        <button class="calcButton" onclick="addSymbol('√')"> √ </button>
+        <button class="calcButton" onclick="addSymbol('sin')"> Sin </button>
+        <button class="calcButton" onclick="addSymbol('cos')"> Cos </button>
+        <button class="calcButton" onclick="addSymbol('tan')"> Tan </button>
     </div>
     <div class="enterDiv">
-        <button class="enterButton"> Enter </button>
-
+        <button class="enterButton" onclick="increment(); enterPress()"> Enter </button>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
