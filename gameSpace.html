@@ -28,7 +28,19 @@
                 <span>Current:</span>
                 <span class="currentInput" id="current-el"></span>
             </div>
-        </div>
+        </div> 
+            <div class="big inputBoxes3"> 
+                <div>
+                    <span>
+                        level: 
+                    </span>
+                    <span id="level-el">
+                        0
+                    </span>
+                </div>
+
+            </div>
+
     </div>
 
     <div class="calcButtons">
@@ -40,10 +52,10 @@
         <button class="calcButton" onclick="addSymbol('/')"> / </button>
         <button class="calcButton" onclick="addSymbol('+')"> + </button>
         <button class="calcButton" onclick="addSymbol('-')"> - </button>
-        <button class="calcButton" onclick="addSymbol('Math.sqrt(')"> √ </button>
-        <button class="calcButton" > Ans </button>
-        <button class="calcButton" onclick="addSymbol('cos')"> Cos </button>
-        <button class="calcButton" onclick="addSymbol('tan')"> Tan </button>
+        <button class="calcButton" onclick="clearCurrent()"> Clear </button>
+        <button class="calcButton" onclick="addAns()"> Ans </button>
+        <button class="calcButton" > Cos </button>
+        <button class="calcButton" > Tan </button>
     </div>
     <div class="enterDiv">
         <button class="enterButton" onclick="increment(); enterPress()"> Enter </button>
