@@ -5,6 +5,7 @@ let currentEl = document.getElementById("current-el")
 let goalNum = 2
 let moveNum = 0 
 let currentPress = ""
+let Ans
 
 goalEl.textContent = goalNum
 
@@ -16,7 +17,9 @@ function increment() {
 }
 
 function addSymbol(symbol){
+    if (symbol != 2) {
     increment();
+    }
     console.log(symbol);
     currentPress += symbol
     console.log(currentPress)
@@ -28,7 +31,8 @@ function test() {
 }
 
 function enterPress(){
-    historyEl.textContent += currentPress + "|"
+    historyEl.textContent += currentPress + " | "
+    console.log(eval(currentPress))
     currentPress = " "
-    currentEl.textContent = currentPress
+    currentEl.textContent = currentPress 
 }

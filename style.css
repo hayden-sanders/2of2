@@ -120,12 +120,14 @@ h3 {
 }
 
 .history {
+    width:300px;
     margin-bottom: 20px;
+    overflow-wrap: anywhere;
+
 }
 
 .currentInput {
     width:300px;
     height: 20px;
-    background-color: rgb(44, 211, 177);
-    text-wrap: wrap;
+    overflow-wrap: anywhere;
 }
